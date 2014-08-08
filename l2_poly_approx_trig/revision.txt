@@ -1,0 +1,10 @@
+Software to compute approximations of sin and cos with L2 orthogonal polynomials.
+
+Author: Kris Garrett
+
+KG = Kris Garrett
+
+------------------------------------------------------------------------------------------
+Version     Date        Maintainer  Description
+------------------------------------------------------------------------------------------
+1.0         May 11 2010    KG       Initial Release.

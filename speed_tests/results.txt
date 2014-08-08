@@ -1,0 +1,53 @@
+--- Files ---
+sin             linux binary corresponding to sin.cpp
+sin.cpp         source code to test speed of c library call to sin
+sin1            linux binary corresponding to sin1.cpp
+sin1.cpp        source code to test speed of polynomial approx to sin
+Sin.class       java class corresponding to Sin.java
+Sin.java        source code to test speed of java library call to sin
+Sin1.class      java class corresponding to Sin1.java
+Sin1.java       source code to test speed of polynomial approx to sin
+results.txt     this file
+compile.sh      bash script to compile all source files
+
+
+
+--- Results ---
+'x' is a goofy calculation which basically means nothing.
+'sin(1)' is a check to make sure the polynomial version of sin gives the correct result.
+'time' is the amount of time it takes to go through 100,000,000 sin calculations.
+
+
+Below are the results for my machine.  It tests the programs
+1) sin
+2) sin1
+3) Sin.class
+4) Sin1.class
+
+
+
+kris@kris-desktop:~/Documents/Research/L2 Approx Sin Cos/speed_tests$ ./sin && ./sin1 && ./sin2 && java Sin && java Sin1 && java Sin2
+x = -2.64638
+sin(1) = 0.841471
+time: 7520
+
+x = -2.64638
+sin(1) = 0.841471
+time: 3930
+
+x = -2.64638
+sin(1) = 0.841471
+time: 2100
+
+x = -2.64638456559356
+sin(1) = 0.8414709848078965
+time: 19487
+
+x = -2.646384565593559
+sin(1) = 0.8414709848078965
+time: 5201
+
+x = -2.6463846585282873
+sin(1) = 0.8414710507492265
+time: 3609
+
